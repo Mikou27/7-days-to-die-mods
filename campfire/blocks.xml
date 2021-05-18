@@ -1,0 +1,4 @@
+<configs>
+
+<set xpath="/blocks/block[@name='campfire']/property[@name='Model'][@value='Entities/Crafting/campfirePrefab']/@value">#@modfolder:Resources/campfire.unity3d?campfire.prefab</set>
+</configs>
