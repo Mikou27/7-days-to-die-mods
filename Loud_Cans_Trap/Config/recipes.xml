@@ -1,0 +1,9 @@
+<configs>
+ <append xpath="/recipes">
+  <recipe name="Piège de détection" count="1"> <!-- trap -->
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="drinkCanEmpty" count="2"/>
+	<ingredient name="resourceYuccaFibers" count="10"/>	
+  </recipe>
+ </append>
+</configs>

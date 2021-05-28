@@ -1,0 +1,34 @@
+<configs>
+ <append xpath="/blocks">
+  <block name="Piège de détection" >
+    <property name="DescriptionKey" value="detectionDesc"/>
+	<property name="Class" value="TrunkTip"/>
+	<property name="Material" value="Mtrash"/>
+	<property name="Damage" value="0"/>
+	<property name="DamageReceived" value="1"/>
+	<property name="BreakingPercentage" value="0.01"/>
+	<property name="BrokenPercentage" value="0.01"/>
+	<property name="MaxDamage" value="150"/>
+	<property name="StabilitySupport" value="false"/> 
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/detecteur.unity3d?detecteur.prefab"/>
+	<property name="CustomIcon" value="detecteur"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="CanPickup" value="true"/>		
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="2"/>
+	</property>
+	<property name="BuffsWhenWalkedOn" value="buffWalkOnCanTrap"/>
+	<drop event="Harvest" name="resourceWood" count="0,2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceWood" count="1" prob="0.50" stick_chance="1"/>
+	<property name="Stacknumber" value="30"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="444"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+  </block>
+ </append>
+</configs>

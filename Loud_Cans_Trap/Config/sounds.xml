@@ -1,0 +1,10 @@
+<configs>
+ <append xpath="/Sounds"> 
+   <SoundDataNode name="WalkOnCanTrap"> <AudioSource name="Sounds/AudioSource_Footsteps"/>
+	<Noise ID="2" noise="1" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Step/steptrash1"/>
+	<LowestPitch name="0.5"/>
+	<HighestPitch name="0.7"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="5"/> </SoundDataNode>
+ </append>
+</configs>

@@ -1,0 +1,12 @@
+<configs> 
+ <append xpath="/buffs"> 
+   <buff name="buffWalkOnCanTrap" hidden ="true">		
+		<stack_type value="ignore"/>
+		<duration value="0.8"/>    
+		<update_rate value="0.8"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="WalkOnCanTrap"/>		
+		</effect_group>
+   </buff>
+ </append>
+</configs>

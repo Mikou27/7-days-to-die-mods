@@ -1,0 +1,5 @@
+﻿Key,French
+
+---------------------Blocks ------------------------
+detectionDesc,"Un piège simple mais bruyant si on marche dessus, parfait pour le camping sauvage."
+
