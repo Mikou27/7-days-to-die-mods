@@ -1,0 +1,41 @@
+<configs>
+ <!-- tent health boost -->
+ <append xpath="/buffs"> 
+
+   <buff name="buffShelteredInTent" hidden ="true"  >		
+		<stack_type value="ignore"/>
+		<duration value="0"/>    
+		<update_rate value="0.05"/>
+		<effect_group>
+		    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffElementWet"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffElementWet"/>
+	        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHealHealthTent"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="uitweak_ui_game_symbol_map_sleeping"/>
+		</effect_group>	
+   </buff>
+   
+   <buff name="uitweak_ui_game_symbol_map_sleeping" name_key="buffShelteredInTentName" description_key="ShelteredInTentDesc" icon="ui_game_symbol_map_sleeping" >		
+		<stack_type value="ignore"/>
+		<duration value="20"/>    		
+    </buff>
+   
+   <buff name="buffHealHealthTent" hidden="true" >  
+		<stack_type value="ignore"/>
+		<update_rate value="0.75"/>
+		<duration value="0.75"/>
+		    
+		<effect_group>		
+		   <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffElementWet"/>
+		   <passive_effect name="HypothermalResist" operation="base_set" value="300" />
+		   <passive_effect name="HyperthermalResist" operation="base_set" value="300"/>	
+		   <triggered_effect trigger="onSelfBuffStart" action="ModifyStats"  stat="Health" operation="add" value="0.25"/>
+		   <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1.0" effect_name="Blur"/>
+		   <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Blur"/>
+		   <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1.0" effect_name="Underwater"/>
+		   <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Underwater"/>
+		   	<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" buff="buffShelteredInTent"/> 
+	    </effect_group>
+   </buff>
+
+ </append>
+</configs>

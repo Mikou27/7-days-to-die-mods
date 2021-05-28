@@ -1,0 +1,9 @@
+﻿Key,French
+
+---------------------Blocks ------------------------
+TenteDesc,"Une tente archaïque, mais qui vous protégera de l'hypothermie, de l'hyperthermie et régénérera votre santé."
+
+---------------------Buffs-------------------------
+
+buffShelteredInTentName,"Repos"
+ShelteredInTentDesc,"Le repos dans une tente vous protège de la pluie, la chaleur, le froid et régénére votre santé."
