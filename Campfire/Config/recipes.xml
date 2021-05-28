@@ -1,0 +1,123 @@
+<configs>
+
+ <!-- Hook ammoGasCan(essence) recipe -->
+ <removeattribute xpath="/recipes/recipe[@name='ammoGasCan']/@tags" />
+ <setattribute xpath="/recipes/recipe[@name='ammoGasCan']" name="craft_tool">toolBeaker</setattribute>
+ <set xpath="/recipes/recipe[@name='ammoGasCan'][@craft_area='chemistryStation']/@craft_area">campfire</set>
+ <set xpath="/recipes/recipe[@name='ammoGasCan'][@count='10']/@count">5</set>
+  
+  <!-- hook and change fire weapons ammos recipes to craft them in camp fire with cooking pot -->
+ <append xpath="/recipes">
+ 
+	
+<recipe name="ammo9mmBulletBall" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="240" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="80"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo9mmBulletHP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="20"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1600"/>
+	<ingredient name="resourceGunPowder" count="80"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo9mmBulletAP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletBall" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="240" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletHP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="20"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1600"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletAP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo762mmBulletBall" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="240" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo762mmBulletHP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="20"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1600"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+<recipe name="ammo762mmBulletAP" count="1" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceScrapBrass" count="10"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="360" craft_area="campfire"  craft_tool="toolCookingPot">
+	<ingredient name="resourceScrapLead" count="1000"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceScrapBrass" count="800"/>
+</recipe>
+
+</append>
+ 
+
+
+</configs>
