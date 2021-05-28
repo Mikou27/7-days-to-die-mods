@@ -1,0 +1,13 @@
+<configs>
+ <!-- Hook repair kit recipe -->
+ <set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceForgedIron']/@name">resourceCloth</set>
+ <set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceDuctTape']/@name">resourceAnimalFat</set>
+ <set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceCloth']/@count">4</set>
+ <set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceAnimalFat']/@count">10</set>
+ 
+ <insertAfter xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceAnimalFat']" >
+   <ingredient name="resourceWood" count="2"/>	 
+   <ingredient name="resourceScrapIron" count="20"/>
+ </insertAfter>
+
+</configs>

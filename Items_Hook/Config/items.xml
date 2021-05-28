@@ -1,0 +1,12 @@
+<configs>
+  <insertAfter xpath="/items/item[@name='resourceRepairKit']/property[@name='DropMeshfile']" >
+    <property name="CustomIcon" value="repair_kit"/>	
+  </insertAfter>
+  
+  <insertAfter xpath="/items/item[@name='ammoGasCan']/property[@name='DropMeshfile']" >
+    <property name="CustomIcon" value="bidon"/>	
+  </insertAfter>
+  
+  <append xpath="/items/item/property[@name='Group' and @value='Ammo/Weapons']/@value">,Resources,Chemicals,CFChemicals</append>
+ 
+</configs>
