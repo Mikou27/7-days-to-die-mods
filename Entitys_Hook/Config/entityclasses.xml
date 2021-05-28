@@ -1,0 +1,14 @@
+<configs>
+<!-- zombies can't climb ladders -->
+<set xpath="/entity_classes/entity_class/property[@name='CanClimbLadders'][@value='true']/@value">false</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='CanClimbVertical'][@value='true']/@value">false</set>
+<!-- headshots fatality -->
+<set xpath="/entity_classes/entity_class/property[@name='DismemberMultiplierHead'][@value='1']/@value">100</set>
+<set xpath="/entity_classes/entity_class/property[@name='DismemberMultiplierHead'][@value='.7']/@value">100</set>
+<!-- player  items on start -->
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival'][@value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,noteDuke01']/@value">drinkJarBoiledWater,foodCanChili,vehicleMotorcyclePlaceable,medicalFirstAidBandage,meleeToolTorch,ammoGasCanBundle,meleeWpnBladeT1HuntingKnife,gunHandgunT2Magnum44,ammoBundle44MagnumBulletBall</set> 
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP'][@value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock']/@value">drinkJarBoiledWater,foodCanChili,vehicleMotorcyclePlaceable,medicalFirstAidBandage,meleeToolTorch,ammoGasCanBundle,meleeWpnBladeT1HuntingKnife,gunHandgunT2Magnum44,ammoBundle44MagnumBulletBall</set> 
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP'][@value='drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock']/@value">drinkJarBoiledWater,foodCanChili,vehicleMotorcyclePlaceable,medicalFirstAidBandage,meleeToolTorch,ammoGasCanBundle,meleeWpnBladeT1HuntingKnife,gunHandgunT2Magnum44,ammoBundle44MagnumBulletBall</set> 
+
+</configs>
+
