@@ -1,0 +1,14 @@
+<configs>
+
+<!-- Player Carry Capacity -->
+<!-- <set xpath="/windows/window[@name='windowBackpack']/panel[@width='100%']/@width">50%</set> 
+<set xpath="/windows/window[@name='windowBackpack']/panel[@height='303']/@height">150</set>  -->
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@rows='5']/@rows">7</set> 
+<!-- <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@cols='9']/@cols"></set>  -->
+<!-- <set xpath="/windows/window[@name='windowToolbelt']/rect/rect/grid[@cols='10']/@cols">12</set>  -->
+<!-- <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@cell_width='67']/@cell_width">46</set> 
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@cell_height='67']/@cell_height">46</set> 
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@width='606']/@width">303</set> 
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@height='336']/@height">168</set>  -->
+</configs>
+
